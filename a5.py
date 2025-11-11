@@ -301,7 +301,7 @@ if __name__ == "__main__":
     remove_if_exists(b.rows[4][8], 1)
     remove_if_exists(b.rows[4][8], 2)
     remove_if_exists(b.rows[4][8], 3)
-    remove_if_exists(b.rows[4][8], 4)
+    remove_if_exists(b.rows[4][8], 4) 
     remove_if_exists(b.rows[6][7], 2)
     remove_if_exists(b.rows[6][7], 3)
     remove_if_exists(b.rows[6][7], 5)
