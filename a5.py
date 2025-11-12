@@ -182,7 +182,25 @@ def DFS(state: Board) -> Board:
     Returns:
         either None in the case of invalid input or a solved board
     """
-    pass
+    the_stack = Stack([state])
+    the_stack.push(state)
+
+    while not the_stack.is_empty():
+        current_board=the_stack.pop()
+        print(current_board)
+        if current_board. goal_test():
+            return current_board
+        row, col=current_board. find_most_constrate_cell() 
+        possible_value=current_board.rows[row][col]
+        print(row,col,possible_value)
+        if not current_board.failure_test():
+            for val in possible_value:
+                new_board=copy.deepcopy(current_board)
+                new_board.update[row,col,val]
+                the_stack.push(new_board)
+                
+
+
 
 
 def BFS(state: Board) -> Board:
